@@ -1,0 +1,142 @@
+@import url(./root.css);
+
+.header__logo p{
+    color: #1F1919;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.blogpage__top{
+    border-top: 1px solid #C9CDD3;
+    padding-top: 50px;
+}
+
+.blogpage{
+    padding-top: 117px;
+}
+
+.blogpage__top .container{
+    display: grid;
+    grid-template-columns: 1fr 832px;
+}
+
+.blogpage__back{
+    display: grid;
+    grid-template-columns: 56px 1fr;
+    align-items:center;
+    grid-column-gap: 24px;
+}
+
+.blogpage__backTxt p{
+    font-weight: 500;
+    font-size: 41px;
+    line-height: 48px;
+    color: #000000;
+}
+
+.blogpage__backBtn{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 1px solid #EBF1F4;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.blogpage__searchWrap{
+    position: relative;
+}
+
+.blogpage__searchPic{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.blogpage__searchWrap input{
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    padding-bottom: 5px;
+}
+
+.blogpage__contentWrap {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 31px;
+}
+
+.blogpage__content{
+    margin-top: 80px;
+    padding-bottom: 120px;
+}
+
+.blog__elem{
+    background: #FFFFFF;
+    box-shadow: 0px 16px 24px rgba(0, 0, 0, 0.05), 0px 6px 30px rgba(0, 0, 0, 0.01), 0px 8px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.blog__elemItemPic{
+    height: 295px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transform: translate(0px,-5px);
+}
+
+.blog__elemItemTitle h3{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3em;
+    color: #262D36;
+    padding-top: 20px;
+}
+
+.blog__elemItemDate time{
+    font-weight: 400;
+font-size: 16px;
+line-height: 1.5em;
+
+color: #7A8097;
+}
+
+.blog__elemItemTxt{
+    padding: 0 45px;
+}
+
+.blog__elemItemTitle{
+    padding-top: 2px;
+}
+
+.blog__elemItemDate{
+    padding-top: 10px;
+}
+
+.blog__elemItemTxt{
+    height: 114px;
+}
+
+.blogpage__addWrap p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    border-bottom: 1px solid  var(--color-blue);
+    color: var(--color-blue);
+    cursor: pointer;
+}
+
+.blogpage__add{
+    display: flex;
+    justify-content: center;
+    padding-top: 63px;
+    display: none;
+}
