@@ -140,7 +140,7 @@
                                 <div class="canSlider__track">
                                     <div class="canSlider__block">
                                         <div class="canSlider__blockTitle">
-                                            <h3>Научитесь использовать опционные<br>стратегии</h3>
+                                            <h3>Научитесь использовать опционные стратегии</h3>
                                         </div>
                                         <div class="canSlider__blockPic">
                                             <img width="1099" height="630px" src="<?php echo get_template_directory_uri()?>/assets/source/can/imac.png" alt="">
@@ -180,6 +180,39 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="canSliderMob">
+                    <div class="canSlider__mobWrap owl-carousel owl-theme">
+                        <div class="canSlider__mobWrapItem">
+                                <div class="canSlider__blockTitle">
+                                    <h3>Научитесь использовать опционные стратегии</h3>
+                                </div>
+                                <div class="canSlider__blockPic">
+                                    <img width="1099" height="630px" src="<?php echo get_template_directory_uri()?>/assets/source/can/imac.png" alt="">
+                                    <div style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/can/test.jpg);" class="canSlider__blockPicMain"></div>
+                                </div>
+                        </div>
+
+                        <div class="canSlider__mobWrapItem">
+                                <div class="canSlider__blockTitle">
+                                    <h3>Научитесь использовать опционные<br>стратегии 2 </h3>
+                                </div>
+                                <div class="canSlider__blockPic">
+                                    <img width="1099" height="630px" src="<?php echo get_template_directory_uri()?>/assets/source/can/imac.png" alt="">
+                                    <div style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/can/test.jpg);" class="canSlider__blockPicMain"></div>
+                                </div>
+                        </div>
+
+                        <div class="canSlider__mobWrapItem">
+                                <div class="canSlider__blockTitle">
+                                    <h3>Научитесь использовать опционные<br>стратегии 3</h3>
+                                </div>
+                                <div class="canSlider__blockPic">
+                                    <img width="1099" height="630px" src="<?php echo get_template_directory_uri()?>/assets/source/can/imac.png" alt="">
+                                    <div style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/can/test.jpg);" class="canSlider__blockPicMain"></div>
+                                </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </section>
@@ -602,6 +635,8 @@
                     <img class="salles__coin salles__coinRight1" id="salles__coinNearly" src="<?php echo get_template_directory_uri()?>/assets/source/salles/right1.png" alt="">
                     <img class="salles__coin salles__coinRight2" id="salles__coinMiddle" src="<?php echo get_template_directory_uri()?>/assets/source/salles/right2.png" alt="">
                     <img class="salles__coin salles__coinRight3" id="salles__coinFar" src="<?php echo get_template_directory_uri()?>/assets/source/salles/right3.png" alt="">
+                    <img class="salles__coinMob salles__coinMob1" id="salles__coinFar" src="<?php echo get_template_directory_uri()?>/assets/source/salles/mob1.png" alt="">
+                    <img class="salles__coinMob salles__coinMob2" id="salles__coinFar" src="<?php echo get_template_directory_uri()?>/assets/source/salles/mob2.png" alt="">
                 </div>
             </section>
 
@@ -658,10 +693,21 @@
                         <h2>Отзывы наших учеников</h2>
                     </div>
                     <div class="reviews__slider owl-carousel owl-theme">
-                        <div class="reviews__sliderItem" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/reviews/1.png);"></div>
-                        <div class="reviews__sliderItem" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/reviews/2.png);"></div>
-                        <div class="reviews__sliderItem" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/reviews/3.png);"></div>
-                        <div class="reviews__sliderItem" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/reviews/2.png);"></div>
+                        <div class="reviews__sliderItem" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/reviews/1.png);">
+                            
+                        </div>
+
+                        <div class="reviews__sliderItem" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/reviews/2.png);">
+                            
+                        </div>
+
+                        <div class="reviews__sliderItem" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/reviews/3.png);">
+                            
+                        </div>
+
+                        <div class="reviews__sliderItem" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/reviews/2.png);">
+                            
+                        </div>
                     </div>
                 </div>
             </section>
@@ -741,6 +787,19 @@
             </section>
         </main>
         <script>
+
+$('.canSlider__mobWrap').owlCarousel({
+    loop:true,
+    margin:16,
+    nav:false,
+    dots:false,
+    responsive:{
+        0:{
+            items:1
+        }
+    }
+})
+
         $('.reviews__slider').owlCarousel({
     loop:true,
     margin:16,
@@ -750,8 +809,8 @@
         0:{
             items:1
         },
-        600:{
-            items:3
+        700:{
+            items:2
         },
         1000:{
             items:3
@@ -778,6 +837,9 @@
         dots:false,
         responsive:{
             0:{
+                items:1
+            },
+            900:{
                 items:2
             }
         }

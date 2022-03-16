@@ -275,6 +275,9 @@ padding: 0 10px;
     line-height: 1.26em;
     color: #1C2529;
 }
+.canSlider__blockTitle{
+    height: 50px;
+}
 .canSlider__content{
     padding-top: 63px;
 }
@@ -334,10 +337,13 @@ padding: 0 10px;
 
 .program .container{
     position: relative;
+    z-index: 3;
     
 }
 .program__bgTitle{
     position: absolute;
+    z-index: 2;
+    top: -120px
 }
 .program__bgTitle p{
     font-weight: 700;
@@ -383,7 +389,8 @@ padding: 0 10px;
 
 .program__sideType{
     height: 77px;
-    width: 400px;
+    max-width: 400px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -503,6 +510,7 @@ padding: 0 10px;
     display: grid;
     grid-template-columns: 1fr 110px;
     padding-right: 15px;
+    grid-column-gap: 5px;
 }
 
 .program__sideNamePrice h6{
@@ -742,6 +750,7 @@ padding: 0 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     padding-top: 50px;
+
 }
 
 .prepod__pic{
@@ -778,7 +787,7 @@ padding: 0 10px;
 }
 .reviews__sliderItem{
     height: 507px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -821,7 +830,7 @@ padding: 0 10px;
 }
 .cases__sliderItem{
     height: 620px;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -932,7 +941,7 @@ color: #7A8097;
     padding-bottom: 50px;
 }
 
-.footer .container{
+.footer__content{
     display: grid;
     grid-template-columns: 3fr 1fr;
 }
@@ -986,4 +995,22 @@ color: #7A8097;
     display: flex;
     justify-content: space-between;
     padding-right: 20px;
+}
+
+
+
+.canSliderMob{
+    display: none;
+}
+
+.salles__coinMob{
+    position:absolute;
+    display: none;
+}
+.salles__coinMob1{
+    bottom: -120px;
+}
+.salles__coinMob2{
+    top:-90px;
+    right: -35px;
 }
