@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/fonts/stylesheet.css'>
     <link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/style.css'>
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/media.css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="<?php echo get_template_directory_uri()?>/assets/js/owl.carousel.js"></script>

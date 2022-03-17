@@ -3,7 +3,17 @@
 window.addEventListener('DOMContentLoaded', ()=>{
     const blog__elem = document.querySelectorAll('.blog__elem');
     const addBtn = document.querySelector('.blogpage__add');
-    const step = 12;
+    let step = 12;
+
+    if (window.screen.width < 1000){
+        step = 10;
+    }
+    if (window.screen.width < 700){
+        step = 8;
+    }
+    if (window.screen.width < 500){
+        step = 5;
+    }
 
     const search = document.querySelector('.blogpage__searchWrap input');
     const titles = document.querySelectorAll('.blog__elemItemTitle h3');

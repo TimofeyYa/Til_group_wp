@@ -52,8 +52,5 @@
     </div>
   
     <script src='<?php echo get_template_directory_uri()?>/assets/js/script.js'></script>
-    <script src='<?php echo get_template_directory_uri()?>/assets/js/canslider.js'></script>
-    <script src='<?php echo get_template_directory_uri()?>/assets/js/coinmove.js'></script>
-    <script src='<?php echo get_template_directory_uri()?>/assets/js/program.js'></script>
 </body>
 </html>

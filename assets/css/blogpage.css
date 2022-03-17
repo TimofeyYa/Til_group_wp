@@ -110,7 +110,7 @@ color: #7A8097;
 }
 
 .blog__elemItemTxt{
-    padding: 0 45px;
+    padding: 10px 45px;
 }
 
 .blog__elemItemTitle{
@@ -122,7 +122,7 @@ color: #7A8097;
 }
 
 .blog__elemItemTxt{
-    height: 114px;
+    min-height: 114px;
 }
 
 .blogpage__addWrap p{

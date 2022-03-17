@@ -4,6 +4,7 @@
 /* Template Name: main */
 
 ?>
+<link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/media.css'>
       <main class="main">
             <section class="firstscreen">
                 <div class="container">
@@ -26,7 +27,7 @@
                                     <h4>Торговать с небольшим депозитом </h4>
                                 </div>
                                 <div class="firstscreen__bottomRightTitle">
-                                    <h3>Курс для тех<br>кто хочет</h3>
+                                    <h3>Курс для тех кто хочет</h3>
                                 </div>
                                 <div class="firstscreen__bottomRightGrad">
                                     <svg width="760" height="576" viewBox="0 0 760 576" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -845,5 +846,7 @@ $('.canSlider__mobWrap').owlCarousel({
         }
     })
     </script>
-        
+    <script src='<?php echo get_template_directory_uri()?>/assets/js/canslider.js'></script>
+    <script src='<?php echo get_template_directory_uri()?>/assets/js/coinmove.js'></script>
+    <script src='<?php echo get_template_directory_uri()?>/assets/js/program.js'></script>
 <?php get_footer();?>

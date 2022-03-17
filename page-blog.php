@@ -6,6 +6,7 @@
 ?>
 
 <link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/blogpage.css'>
+<link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/media.css'>
     <main class="main">
             <section class="blogpage">
                 <div class="blogpage__top">
@@ -37,22 +38,8 @@
                 <div class="blogpage__content">
                     <div class="container">
                         <div class="blogpage__contentWrap">
-                            <?php 
-                            
-
-if ( have_posts() ) : // если есть посты
-	while ( have_posts() ) : the_post(); // то инициализируем каждый пост по порядку
-		// выполняем код для каждого конкретного поста
-		the_title( '<h2>', '</h2>' ); // например выводим заголовок
-	endwhile;
-else:
-	echo 'В этой категории нет записей, вероятно.';
-endif;
-
-
-                            ?>
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Англиканские ритейлеры и как на них зарабатывать</h3>
@@ -64,7 +51,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -76,7 +63,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -88,7 +75,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -100,7 +87,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -112,7 +99,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -124,7 +111,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -136,7 +123,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские опционы и как на них зарабатывать</h3>
@@ -148,7 +135,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -160,7 +147,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -172,7 +159,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -184,7 +171,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -196,7 +183,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -208,7 +195,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -220,7 +207,7 @@ endif;
                             </article>
 
                             <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(./source/blogsec/blogitem.jpg);"></div>
+                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
                                 <div class="blog__elemItemTxt">
                                     <div class="blog__elemItemTitle">
                                         <h3>Американские ритейлеры и как на них зарабатывать</h3>
@@ -247,4 +234,6 @@ endif;
         window.location.href ="";
     })
     </script> -->
+
+    <script src='<?php echo get_template_directory_uri()?>/assets/js/blogadd.js'></script>
 <?php get_footer();?>
