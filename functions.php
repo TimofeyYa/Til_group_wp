@@ -31,6 +31,9 @@ show_admin_bar(false);
 add_action("wp_ajax_send_mail", "send_mail");
 add_action("wp_ajax_nopriv_send_mail", "send_mail");
 
+
+add_theme_support( 'post-thumbnails' );
+
 function send_mail(){
     $name = $_POST['name'];
     $phone = $_POST['phone'];

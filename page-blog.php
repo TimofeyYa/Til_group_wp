@@ -7,11 +7,13 @@
 
 <link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/blogpage.css'>
 <link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/media.css'>
+
+
     <main class="main">
             <section class="blogpage">
                 <div class="blogpage__top">
                     <div class="container">
-                        <div class="blogpage__back">
+                        <a href="<?php echo get_home_url(); ?>" class="blogpage__back">
                             <div class="blogpage__backBtnWrap">
                                 <div class="blogpage__backBtn">
                                     <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +24,7 @@
                             <div class="blogpage__backTxt">
                                 <p>Блог</p>
                             </div>
-                        </div>
+                        </a>
                         <div class="blogpage__search">
                             <div class="blogpage__searchWrap">
                                 <input type="text" placeholder="Поиск в блоге">
@@ -38,185 +40,34 @@
                 <div class="blogpage__content">
                     <div class="container">
                         <div class="blogpage__contentWrap">
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Англиканские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
+                        <?php if(have_posts()) : ?>
+					<?php while(have_posts()) : the_post(); ?>
+					
+					<?php endwhile; ?>
+					<?php endif; ?>
+                    <?php
+					global $post;
+					$args = array( 'numberposts' => 9 , 'category' => 1, 'orderby' => 'date');
+					$myposts = get_posts( $args );
+					foreach( $myposts as $post ){ setup_postdata($post);
+					?>
+					<article class="blog__elem" >
+                        <a href="<?php the_permalink()?>">
+                            <div class="blog__elemItemPic" style="background-image: url(<?php echo the_post_thumbnail_url() ?>);"></div>
+                            <div class="blog__elemItemTxt">
+                                <div class="blog__elemItemTitle">
+                                    <h3><?php the_title()?></h3>
                                 </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
+                                <div class="blog__elemItemDate">
+                                    <time><?php echo get_the_date('j F Y'); ?></time>
                                 </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские опционы и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
-
-                            <article class="blog__elem" >
-                                <div class="blog__elemItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                                <div class="blog__elemItemTxt">
-                                    <div class="blog__elemItemTitle">
-                                        <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                    </div>
-                                    <div class="blog__elemItemDate">
-                                        <time>Январь 11, 2022</time>
-                                    </div>
-                                </div>
-                            </article>
+                            </div>
+                        </a>
+                    </article>
+					<?php
+					}
+					wp_reset_postdata();
+					?>
                         </div>
                         <div class="blogpage__add">
                             <div class="blogpage__addWrap">

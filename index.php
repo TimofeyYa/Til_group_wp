@@ -731,57 +731,40 @@
                         <h2>Блог</h2>
                     </div>
                     <div class="blog__slider owl-carousel owl-theme">
+                    <?php if(have_posts()) : ?>
+					<?php while(have_posts()) : the_post(); ?>
+					
+					<?php endwhile; ?>
+					<?php endif; ?>
+                    <?php
+					global $post;
+					$args = array( 'numberposts' => 9 , 'category' => 1, 'orderby' => 'date');
+					$myposts = get_posts( $args );
+					foreach( $myposts as $post ){ setup_postdata($post);
+					?>
                         <article class="blog__sliderItem" >
-                            <div class="blog__sliderItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                            <div class="blog__sliderItemTxt">
-                                <div class="blog__sliderItemTitle">
-                                    <h3>Американские ритейлеры и как на них зарабатывать</h3>
+                            <a href="<?php the_permalink()?>">
+                                <div class="blog__sliderItemPic" style="background-image: url(<?php echo the_post_thumbnail_url() ?>);"></div>
+                                <div class="blog__sliderItemTxt">
+                                    <div class="blog__sliderItemTitle">
+                                        <h3><?php the_title()?></h3>
+                                    </div>
+                                    <div class="blog__sliderItemDate">
+                                        <time><?php echo get_the_date('j F Y'); ?></time>
+                                    </div>
                                 </div>
-                                <div class="blog__sliderItemDate">
-                                    <time>Январь 11, 2022</time>
-                                </div>
-                            </div>
+                            </a>
                         </article>
+                        <?php
+					}
+					wp_reset_postdata();
+					?>
 
-                        <article class="blog__sliderItem" >
-                            <div class="blog__sliderItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                            <div class="blog__sliderItemTxt">
-                                <div class="blog__sliderItemTitle">
-                                    <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                </div>
-                                <div class="blog__sliderItemDate">
-                                    <time>Январь 11, 2022</time>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="blog__sliderItem" >
-                            <div class="blog__sliderItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                            <div class="blog__sliderItemTxt">
-                                <div class="blog__sliderItemTitle">
-                                    <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                </div>
-                                <div class="blog__sliderItemDate">
-                                    <time>Январь 11, 2022</time>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article class="blog__sliderItem" >
-                            <div class="blog__sliderItemPic" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/blogsec/blogitem.jpg);"></div>
-                            <div class="blog__sliderItemTxt">
-                                <div class="blog__sliderItemTitle">
-                                    <h3>Американские ритейлеры и как на них зарабатывать</h3>
-                                </div>
-                                <div class="blog__sliderItemDate">
-                                    <time>Январь 11, 2022</time>
-                                </div>
-                            </div>
-                        </article>
+                        
                     </div>
 
                     <div class="blog__btn">
-                        <a href="#">Перейти в блог</a>
+                        <a href="./blog">Перейти в блог</a>
                     </div>
                 </div>
                 <div class="blog__bg" style="background-image: url(<?php echo get_template_directory_uri()?>/assets/source/program/bg.png);"></div>

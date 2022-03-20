@@ -891,6 +891,9 @@ color: #7A8097;
 
 .blog__sliderItemTxt{
     padding: 0 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .blog__sliderItemTitle{
