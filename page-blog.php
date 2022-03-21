@@ -21,7 +21,7 @@
                                     </svg>                                        
                                 </div>
                             </div>
-                            <div class="blogpage__backTxt">
+                            <div class="blogpage__backTxt pageBlog__back">
                                 <p>Блог</p>
                             </div>
                         </a>

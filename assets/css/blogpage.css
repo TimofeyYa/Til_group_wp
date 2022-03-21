@@ -28,7 +28,7 @@
     grid-column-gap: 24px;
 }
 
-.blogpage__backTxt p{
+.pageBlog__back p{
     font-weight: 500;
     font-size: 41px;
     line-height: 48px;
@@ -184,7 +184,7 @@ color: #7A8097;
     font-weight: 500;
     font-size: 24px;
     line-height: 43px;
-
+    padding-bottom: 10px;
     /* identical to box height, or 179% */
 
     color: #262D36;
@@ -213,3 +213,63 @@ color: #7A8097;
     justify-content: space-between;
     grid-column-gap: 10px;
 }
+
+.singleOffer{
+    background-image: url(../source/singleoffer/bg.png);
+}
+
+.singleOffer .container{
+    display: grid;
+    grid-template-columns: 589px 1fr;
+}
+
+.singleOffer__txt {
+    color: white;
+    padding-top: 100px;
+}
+
+
+.singleOffer__txt h2{
+    font-weight: 500;
+    font-size: 34px;
+}
+
+.singleOffer__picWrap{
+    position: relative;
+    height: 550px;
+    width: 100%;
+}
+
+.singleOffer__picWrap img{
+    position:absolute;
+    width: 719px;
+    max-width: unset;
+    pointer-events: none;
+}
+
+.singleOffer__txt p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.58em;
+    padding-top: 10px;
+
+    color: #FFFFFF;
+}
+
+.singleOffer__txt a{
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    max-width: 191px;
+    width: 100%;
+    height: 47px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.025em;
+    margin-top: 40px;
+}
+

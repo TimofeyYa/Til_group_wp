@@ -100,6 +100,9 @@
         padding-top: 10px;
         font-size: 19px;
     }
+    .singleOffer__txt h2{
+        font-size: 29px;
+    }
 
 }
 
@@ -219,8 +222,16 @@
     .blogpage__top .container {
         grid-template-columns: 1fr 522px;
     }
-    .blogpage__backTxt p{
+    .pageBlog__back p{
         font-size: 35px;
+    }
+
+    .singleOffer__pic{
+        display: none;
+    }
+    .singleOffer .container{
+        grid-template-columns: 1fr;
+        padding-bottom: 50px;
     }
 }
 
@@ -320,7 +331,7 @@
     .blogpage__top .container {
         grid-template-columns: 1fr 412px;
     }
-    .blogpage__backTxt p{
+    .pageBlog__back p{
         font-size: 31px;
     }
 
@@ -404,6 +415,9 @@
     }
     .offer{
         padding-top: 80px;
+    }
+    .singleOffer__txt{
+        padding-top: 60px;
     }
 }
 @media screen and (max-width: 650px){
@@ -519,6 +533,21 @@
     .footer__content{
         grid-template-columns: 1fr;
         grid-row-gap: 20px;
+    }
+    .popup__wrap{
+        padding: 70px 40px;
+    }
+
+    .popup__content h3{
+        font-size: 35px;
+    }
+    .popup__content p{
+        font-size: 17px;
+    }
+
+    .popup__content input, .popup__content button{
+        height: 60px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 560px){
@@ -796,6 +825,18 @@
     .blogpage__top .container {
         grid-row-gap: 15px;
     }
+
+    .popup__content h3{
+        font-size: 31px;
+    }
+    .popup__content p{
+        font-size: 16px;
+    }
+
+    .popup__content input, .popup__content button{
+        height: 55px;
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 450px){
@@ -890,6 +931,32 @@
     .reviews__sliderItem{
         height: 420px;
     }
+
+    .popup__content h3{
+        font-size: 27px;
+    }
+    .popup__content p{
+        font-size: 15px;
+    }
+
+    .popup__content input, .popup__content button{
+        height: 45px;
+        font-size: 14px;
+    }
+    .popup__exit{
+        top:26px;
+        right: 20px;
+    }
+    .popup__wrap {
+        padding: 65px 35px;
+    }
+
+    .singleOffer__txt h2 {
+        font-size: 25px;
+    }
+    .singleOffer__txt p{
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 350px){
@@ -919,5 +986,31 @@
     }
     h1 {
         font-size: 27px;
+    }
+
+
+    .popup__content h3{
+        font-size: 24px;
+    }
+    .popup__content p{
+        font-size: 14px;
+    }
+
+    .popup__content input, .popup__content button{
+        height: 40px;
+        font-size: 13px;
+    }
+    .popup__exit{
+        top:26px;
+        right: 20px;
+    }
+    .popup__wrap {
+        padding: 65px 32px;
+    }
+    .singleOffer__txt h2 {
+        font-size: 21px;
+    }
+    .singleOffer__txt p{
+        font-size: 14px;
     }
 }

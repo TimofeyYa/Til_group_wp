@@ -6,7 +6,9 @@
 ?>  
 
 <link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/blogpage.css'>
+<link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/single.css'>
 <link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/media.css'>
+<link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/mediasingle.css'>
 <style>
     ol{
         list-style:decimal;
@@ -57,7 +59,9 @@
             <section class="singleOffer">
                 <div class="container">
                     <div class="singleOffer__pic">
-                        <img src="<?php echo get_template_directory_uri()?>/assets/source/singleoffer/laptop.png" alt="">
+                        <div class="singleOffer__picWrap">
+                            <img src="<?php echo get_template_directory_uri()?>/assets/source/singleoffer/laptop.png" alt="">
+                        </div>
                     </div>
                     <div class="singleOffer__txt">
                         <h2>Онлайн курс по классическим опционам от практикующих трейдеров</h2>
@@ -65,7 +69,7 @@
                         <p>Научись зарабатывать и защищать свои инвестии на рынке акций. 
                         Используй наш опыт и сэкономь свое время</p>
 
-                        <button>Подробнее</button>
+                        <a href="<?php echo get_home_url(); ?>">Подробнее</a>
                     </div>
                 </div>
             </section>

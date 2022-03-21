@@ -1,0 +1,90 @@
+@media screen and (max-width: 1500px){
+    .wp-block-image img{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .post__contentTitle h1{
+        font-size: 33px;
+        line-height: 1.1em;
+    }
+    .post__contentFirstPic{
+        height: 350px;
+    }
+    .post__contentFirst{
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .post__contentMain h2:not(:first-child) {
+        margin-top: 37px;
+    }
+    .post__contentMain h2{
+        font-size: 20px;
+        line-height: 1.25em;
+    }
+    .post__contentMain p{
+        font-size: 15px;
+        line-height: 1.25em;
+    }
+    h3{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    h4{
+        font-size: 16px;
+        font-weight: 500;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .post__contentTitle h1{
+        font-size: 28px;
+    }
+    .post__contentFirstPic{
+        height: 290px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .post__contentMain h2{
+        font-size: 18px;
+        line-height: 1.25em;
+    }
+    .post__contentMain p{
+        font-size: 14px;
+        line-height: 1.25em;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .post__contentTitle h1{
+        font-size: 25px;
+    }
+    .post__contentDate time{
+        font-size: 15px;
+    }
+    .post__contentFirstPic{
+        height: 190px;
+    }
+    .post__contentFirst{
+        padding-top: 30px;
+        padding-bottom: 40px;
+    }
+    .post__contentMain h2:not(:first-child) {
+        margin-top: 27px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .post__contentTitle h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .post__contentTitle h1{
+        font-size: 21px;
+    }
+}

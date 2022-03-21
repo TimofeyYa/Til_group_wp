@@ -1,0 +1,30 @@
+@import url(./root.css);
+
+
+strong{
+    font-weight: 600;
+}
+
+h3{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+h4{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+blockquote{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-left: 1px solid #C9CDD3;
+    margin: 12px 0;
+    max-width: 80%;
+}
+
+blockquote p{
+    padding-bottom: 10px !important;
+    font-style: italic;
+}

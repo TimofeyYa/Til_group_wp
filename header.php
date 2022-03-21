@@ -6,8 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href='<?php echo get_template_directory_uri()?>/assets/css/reset.css'>
+    <title>TIL Group | Трейдинг, Инвестиции, Обучение</title>
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri()?>/assets/source/favicon.ico" type="image/x-icon">
+    <?php wp_head(); ?>
+
 
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri()?>/assets/css/owl.theme.default.min.css">

@@ -327,7 +327,7 @@
                                                 </div>
                                             </div>
                                             <div class="program__sideBuyBtn">
-                                                <p>Записаться на курс</p>
+                                                <p  id="formPopBtn" data-type="Курс 'Начинающий опционщик'">Записаться на курс</p>
                                             </div>
                                         </div>
 
@@ -344,7 +344,7 @@
                                                 </div>
                                             </div>
                                             <div class="program__sideBuyBtn">
-                                                <p>Записаться на курс</p>
+                                                <p id="formPopBtn" data-type="Курс 'Сборник'">Записаться на курс</p>
                                             </div>
                                         </div>
                                     
@@ -462,7 +462,7 @@
                                                 </div>
                                             </div>
                                             <div class="program__sideBuyBtn">
-                                                <p>Записаться на курс</p>
+                                                <p  id="formPopBtn" data-type="Курс 'Продвинутый опционщик Стандарт'">Записаться на курс</p>
                                             </div>
                                         </div>
 
@@ -480,7 +480,7 @@
                                                 
                                             </div>
                                             <div class="program__sideBuyBtn">
-                                                <p>Записаться на курс</p>
+                                                <p id="formPopBtn" data-type="Курс 'Продвинутый опционщик премиум'">Записаться на курс</p>
                                             </div>
                                         </div>
 
@@ -498,7 +498,7 @@
                                                 
                                             </div>
                                             <div class="program__sideBuyBtn">
-                                                <p>Записаться на курс</p>
+                                                <p id="formPopBtn" data-type="Курс 'Индивидуальное обучение'">Записаться на курс</p>
                                             </div>
                                         </div>
                                     
@@ -624,10 +624,13 @@
                             </div>
                         </div>
                         <div class="salles__form">
-                            <form action="">
-                                <input type="text" name="" id="" placeholder="Ваше имя">
-                                <input type="text" name="" id="" placeholder="Телефон">
-                                <button class="main__btn">Хочу на курс</button>
+                            <form action="<?php echo admin_url('admin-ajax.php?action=send_mail')?>">
+                            <input name="target" type="hidden" id="mail">
+                            <input name="type" type="hidden" value="Курс со скидкой">
+                            <input name="test" type="hidden" id="testInp" value="0">
+                            <input name="name" type="text" placeholder="Ваше имя">
+                            <input name="phone" type="text" placeholder="Телефон">
+                            <button class="main__btn">Хочу на курс</button>
                             </form>
                         </div>
                     </div>
