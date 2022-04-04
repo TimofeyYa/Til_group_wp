@@ -20,6 +20,19 @@
     </div>
 </div>
 
+<div class="popup" id="videoPop">
+    <div class="popup__wrap">
+        <div class="popup__exit">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M23.2955 2.2955C23.7349 1.85616 23.7349 1.14384 23.2955 0.704505C22.8562 0.265165 22.1439 0.265165 21.7045 0.704505L12 10.409L2.2955 0.704509C1.85616 0.26517 1.14384 0.26517 0.704505 0.704509C0.265165 1.14385 0.265165 1.85616 0.704505 2.2955L10.409 12L0.704545 21.7045C0.265205 22.1438 0.265205 22.8562 0.704545 23.2955C1.14389 23.7348 1.8562 23.7348 2.29554 23.2955L12 13.591L21.7045 23.2955C22.1438 23.7348 22.8562 23.7348 23.2955 23.2955C23.7348 22.8562 23.7348 22.1438 23.2955 21.7045L13.591 12L23.2955 2.2955Z" fill="white"/>
+            </svg>
+        </div>
+        <div class="popup__content">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/fyNXplhYgO4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
 <footer class="footer">
             <div class="container">
                 <div class="footer__content">

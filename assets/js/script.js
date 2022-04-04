@@ -19,10 +19,24 @@ window.addEventListener('DOMContentLoaded', ()=>{
           typeCource = document.querySelector('#typeCource');
 
 
-    formPopBtn.forEach(item=>{
-        item.addEventListener('click', ()=>{
-            formPop.style.display = 'flex';
-            typeCource.value = item.dataset.type;
+    if (formPopBtn){
+        formPopBtn.forEach(item=>{
+            item.addEventListener('click', ()=>{
+                formPop.style.display = 'flex';
+                typeCource.value = item.dataset.type;
+            })
         })
-    })
+    }
+
+
+    const videoPop = document.querySelector("#videoPop"),
+          videoPopBtn = document.querySelectorAll('#videoPopBtn');
+
+    if (videoPopBtn){
+        videoPopBtn.forEach(item=>{
+            item.addEventListener('click', ()=>{
+                videoPop.style.display = 'flex';
+            })
+        })
+    }
 })

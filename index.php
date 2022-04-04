@@ -507,7 +507,7 @@
                         </div>
                     </div>
 
-                    <div class="program__video">
+                    <div class="program__video" id="videoPopBtn">
                         <div class="program__videoPic">
                             <img src="<?php echo get_template_directory_uri()?>/assets/source/program/pic.png" alt="">                           
                         </div>

@@ -1094,3 +1094,17 @@ color: #7A8097;
     width: 0;
     opacity: 0;
 }
+
+
+#videoPop .popup__wrap{
+    max-width: 900px;
+
+}
+
+#videoPop .popup__content{
+    height: 50vh;
+}
+
+.program__video div{
+    cursor: pointer;
+}
